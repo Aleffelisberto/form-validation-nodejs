@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form validator</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="form-container">
+    <h1>Form</h1>
+    <form method="POST" action="/form">
+      <input type="email" name="email" id="email" placeholder="email">
+      <small class="invalid-field">
+        <%= emailError %>
+      </small>
+      <input type="name" name="name" id="name" placeholder="name">
+      <small class="invalid-field">
+        <%= nameError %>
+      </small>
+      <input type="number" name="points" id="points" placeholder="points">
+      <small class="invalid-field">
+        <%= pointsError %>
+      </small>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</body>
+
+</html>
